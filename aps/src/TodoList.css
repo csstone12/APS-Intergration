@@ -1,8 +1,8 @@
 .todoListMain .header input {
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #FFF;
-    width: 165px;
+    /* border: 2px solid #FFF; */
+    width: 225px;
 }
 .todoListMain .header button {
     padding: 10px;
@@ -36,6 +36,16 @@
     background-color: pink;
     cursor: pointer;
   }
+
+  .todoListMain .inCart li {
+    color: rgb(0, 0, 0);
+    background-color: lightblue;
+    padding: 15px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    /* list-style: none; */
+    transition: background-color .2s ease-out;
+}
 ul.theList {
     padding: 0;
 }

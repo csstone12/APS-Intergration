@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
 import "./TodoList.css";
+import InCartItems from "./InCartItems";
  
 class TodoList extends Component {
   constructor(props){
@@ -28,7 +29,7 @@ class TodoList extends Component {
       this._inputElement.value = "";
     }
 
-    console.log(this.state.items);
+    // console.log(this.state.items);
 
     e.preventDefault();
   }
@@ -50,11 +51,12 @@ class TodoList extends Component {
             <input ref={(a) => this._inputElement=a}
               placeholder="need to buy">
             </input>
-            <button type="submit">add</button>
+            {/* <button type="submit">add</button> */}
           </form>
         </div>
         <TodoItems entries={this.state.items}
                   delete={this.deleteItem}/>
+        <InCartItems entries={this.state.items}/>
       </div>
     );
   }
